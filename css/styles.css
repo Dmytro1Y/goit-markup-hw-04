@@ -60,13 +60,16 @@ body {
 .projects-list,
 .team-list,
 .buttons-list,
-.apps-list {
+.apps-list,
+.team-social-list,
+.customers-list {
   list-style-type: none;
 }
 
 /*-----------------Lists-----------------*/
 
-.team-list {
+.team-list,
+.footer-social-list {
   display: flex;
   gap: 24px;
 }
@@ -237,7 +240,16 @@ body {
   width: 264px;
 }
 
-.projects-list {
+.text-social-footer {
+  font-weight: 500;
+  color: var(--white-color);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.projects-list,
+.customers-list {
   gap: 24px;
   display: flex;
   justify-content: center;
@@ -265,9 +277,15 @@ body {
 }
 .header-bg {
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/bg-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.header-bg,
 .footer {
   background: var(--dark-color);
 }
@@ -293,6 +311,8 @@ body {
   background: var(--button-hover-color);
   color: var(--white-color);
   border-color: transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-order {
@@ -373,4 +393,69 @@ body {
 
 .link-app {
   text-decoration: none;
+}
+
+.team-social-list {
+  display: flex;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.team-social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.team-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--brand-color);
+}
+
+.footer-social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.container-footer {
+  display: flex;
+  gap: 120px;
+}
+
+.adv-icon {
+  display: flex;
+  background-color: var(--litemode-color);
+  border-radius: 4px;
+  padding: 24px;
+  margin-bottom: 8px;
+  justify-content: center;
+}
+
+.customers-icon {
+  width: 104px;
+  height: 56px;
+}
+
+.container-customers-item {
+  padding: 16px 32px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
+.customers {
+  margin: 120px;
 }
