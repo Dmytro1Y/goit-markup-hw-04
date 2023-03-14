@@ -223,6 +223,8 @@ body {
 
 .header-main {
   border-bottom: 1px solid var(--accent-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 /*-----------------Text-----------------*/
@@ -478,6 +480,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 16px 32px;
+  color: #8e8f99;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   height: 100%;
@@ -494,11 +497,17 @@ body {
   padding-bottom: 120px;
 }
 
+.customers-icon {
+  fill: currentColor;
+}
+
 .team-social-link:hover,
 .team-social-link:focus {
   background-color: var(--button-hover-color);
 }
 
-.customers-link:hover {
-  border: 1px solid var(--button-hover-color);
+.customers-link:hover,
+.customers-link:focus {
+  color: var(--button-hover-color);
+  border-color: var(--button-hover-color);
 }
